@@ -2,6 +2,7 @@
 <manifest>
   <project name="LegacyXperia/local_manifests" path="local_manifests" remote="github" revision="android-4.4" />
   
+  <remote  name="omnirom" fetch="https://github.com/omnirom" />
   <remote  name="iSchneiderle" fetch="https://github.com/iSchneiderle" />
 
   <!-- LegacyXperia projects -->
