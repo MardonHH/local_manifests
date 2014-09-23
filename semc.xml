@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <project name="LegacyXperia/local_manifests" path="local_manifests" remote="github" revision="android-4.4" />
-  
-  <remote  name="omnirom" fetch="https://github.com/omnirom" />
-  <remote  name="iSchneiderle" fetch="https://github.com/iSchneiderle" />
+  <project name="LegacyXperia/local_manifests" path="local_manifests" remote="iSchneiderle" revision="android-4.4" />
 
-  <!-- LegacyXperia projects -->
+  <!-- external Github remotes for MerkMod-->
+  <remote name="omnirom" fetch="https://github.com/omnirom" />
+  <remote name="iSchneiderle" fetch="https://github.com/iSchneiderle" />
+  <remote name="Mardon" fetch="https://github.com/MardonHH" />
+
+  <!-- LegacyXperia projects adapted for MerkMod-->
   <project name="android_device_semc_msm7x30-common" path="device/semc/msm7x30-common" remote="iSchneiderle" revision="android-4.4" />
-
-  <project name="android_device_semc_mogami-common" path="device/semc/mogami-common" remote="omnirom" revision="android-4.4" />
   <project name="android_device_semc_anzu" path="device/semc/anzu" remote="iSchneiderle" revision="android-4.4" />
+
+  <!-- LegacyXperia projects which doesnt need adaption for MerkMod-->
+  <project name="android_device_semc_mogami-common" path="device/semc/mogami-common" remote="omnirom" revision="android-4.4" />
+
+  <!-- LegacyXperia projects for future -->
   <project name="android_device_semc_coconut" path="device/semc/coconut" remote="omnirom" revision="android-4.4" />
   <project name="android_device_semc_haida" path="device/semc/haida" remote="omnirom" revision="android-4.4" />
   <project name="android_device_semc_hallon" path="device/semc/hallon" remote="omnirom" revision="android-4.4" />
@@ -19,19 +24,23 @@
   <project name="android_device_semc_smultron" path="device/semc/smultron" remote="omnirom" revision="android-4.4" />
   <project name="android_device_semc_urushi" path="device/semc/urushi" remote="omnirom" revision="android-4.4" />
 
+  <!-- Kernel enhanced LegacyXperia will come soon will switch remote to MardonHH when ready-->
   <project name="android_kernel_semc_msm7x30" path="kernel/semc/msm7x30" remote="omnirom" revision="android-4.4" />
 
+  <!-- Proprietary SEMC stuff -->
   <project name="DonkeyCoyote/proprietary_vendor_semc" path="vendor/semc" remote="github" revision="android-4.4" />
 
   <!-- OmniROM projects -->
   <project name="android_hardware_qcom_gps" path="hardware/qcom/gps" remote="omnirom" revision="android-4.4" />
   <project name="android_hardware_sony_DASH" path="hardware/sony/DASH" remote="omnirom" revision="android-4.4" />
-  
-  <!-- OmniRom projects with additional changes -->
-  <remove-project name="android_hardware_qcom_audio-caf" />
+
+  <!-- OmniRom projects with additional changes for usage untill MerkMod have all needed changes for msm7x30-->
+    <remove-project name="android_hardware_qcom_audio-caf" />
   <project name="android_hardware_qcom_audio-caf" path="hardware/qcom/audio-caf" remote="omnirom" revision="android-4.4" />
     <remove-project name="android_hardware_qcom_display-caf" />
   <project name="android_hardware_qcom_display-caf" path="hardware/qcom/display-caf" remote="omnirom" revision="android-4.4" />
     <remove-project name="android_hardware_qcom_media-caf" />
   <project name="android_hardware_qcom_media-caf" path="hardware/qcom/media-caf" remote="omnirom" revision="android-4.4" />
+    <remove-project name="android_frameworks_av" />
+  <project name="android_frameworks_av" path="frameworks/av" remote="omnirom" revision="android-4.4" />
 </manifest>
