@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <project name="LegacyXperia/local_manifests" path="local_manifests" remote="iSchneiderle" revision="android-4.4" />
+  <project name="local_manifests" path="local_manifests" remote="iSchneiderle" revision="android-4.4" />
 
   <!-- external Github remotes for MerkMod-->
   <remote name="omnirom" fetch="https://github.com/omnirom" />
