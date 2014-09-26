@@ -7,6 +7,10 @@
   <remote name="iSchneiderle" fetch="https://github.com/iSchneiderle" />
   <remote name="Mardon" fetch="https://github.com/MardonHH" />
 
+  <!-- Nexus7 3G adapted for MerkMod-->
+  <project name="device_asus_tilapia" path="device/asus/tilapia" remote="iSchneiderle" revision="android-4.4" />
+  <project name="kernel_asus_grouper" path="kernel/asus/grouper" remote="iSchneiderle" revision="android-4.4" />
+
   <!-- LegacyXperia projects adapted for MerkMod-->
   <project name="android_device_semc_msm7x30-common" path="device/semc/msm7x30-common" remote="iSchneiderle" revision="android-4.4" />
   <project name="android_device_semc_anzu" path="device/semc/anzu" remote="iSchneiderle" revision="android-4.4" />
