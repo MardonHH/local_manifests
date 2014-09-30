@@ -34,8 +34,9 @@
   <!-- Proprietary SEMC stuff -->
   <project name="DonkeyCoyote/proprietary_vendor_semc" path="vendor/semc" remote="github" revision="android-4.4" />
 
+  <!-- Now already present in MerkMod github -->
+  <!-- <project name="android_hardware_qcom_gps" path="hardware/qcom/gps" remote="omnirom" revision="android-4.4" /> -->
   <!-- OmniROM projects -->
-  <project name="android_hardware_qcom_gps" path="hardware/qcom/gps" remote="omnirom" revision="android-4.4" />
   <project name="android_hardware_sony_DASH" path="hardware/sony/DASH" remote="omnirom" revision="android-4.4" />
 
   <!-- OmniRom projects with additional changes for usage untill MerkMod have all needed changes for msm7x30-->
@@ -47,4 +48,6 @@
   <project name="android_hardware_qcom_media-caf" path="hardware/qcom/media-caf" remote="omnirom" revision="android-4.4" />
     <remove-project name="android_frameworks_av" />
   <project name="android_frameworks_av" path="frameworks/av" remote="omnirom" revision="android-4.4" />
+    <remove-project name="android_hardware_ti_wlan" />
+  <project name="android_hardware_ti_wlan" path="hardware/ti/wlan" remote="omnirom" revision="android-4.4" />
 </manifest>
