@@ -39,12 +39,12 @@
   <!-- OmniROM projects -->
   <project name="android_hardware_sony_DASH" path="hardware/sony/DASH" remote="omnirom" revision="android-4.4" />
 
-  <!-- OmniRom projects with additional changes for usage untill MerkMod have all needed changes for msm7x30-->
-    <remove-project name="android_hardware_qcom_audio-caf" />
+  <!-- OmniRom projects with additional changes for usage untill MerkMod have all needed changes for msm7x30 -->
+    <!-- <remove-project name="android_hardware_qcom_audio-caf" /> -->
   <project name="android_hardware_qcom_audio-caf" path="hardware/qcom/audio-caf" remote="omnirom" revision="android-4.4" />
-    <remove-project name="android_hardware_qcom_display-caf" />
+    <!-- <remove-project name="android_hardware_qcom_display-caf" /> -->
   <project name="android_hardware_qcom_display-caf" path="hardware/qcom/display-caf" remote="omnirom" revision="android-4.4" />
-    <remove-project name="android_hardware_qcom_media-caf" />
+    <!-- <remove-project name="android_hardware_qcom_media-caf" /> -->
   <project name="android_hardware_qcom_media-caf" path="hardware/qcom/media-caf" remote="omnirom" revision="android-4.4" />
     <remove-project name="android_frameworks_av" />
   <project name="android_frameworks_av" path="frameworks/av" remote="omnirom" revision="android-4.4" />
