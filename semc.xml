@@ -6,7 +6,11 @@
   <remote name="omnirom" fetch="https://github.com/omnirom" />
   <remote name="iSchneiderle" fetch="https://github.com/iSchneiderle" />
   <remote name="Mardon" fetch="https://github.com/MardonHH" />
+  <remote name="cm" fetch="https://github.com/Cyanogenmod" />
 
+  <!-- missing superuser for MerkMod-->
+  <project name="Superuser" path="external/koush/superuser" remote="cm" revision="cm-11.0" />
+  
   <!-- Nexus7 3G adapted for MerkMod-->
   <project name="device_asus_tilapia" path="device/asus/tilapia" remote="iSchneiderle" revision="android-4.4" />
   <project name="kernel_asus_grouper" path="kernel/asus/grouper" remote="iSchneiderle" revision="android-4.4" />
